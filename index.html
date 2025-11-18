@@ -10,75 +10,75 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-<header id="header" class="header">
-    <div class="container">
-        <div class="row">
-            <div class="four columns">
-                <img src="img/logo.png" id="logo">
-            </div>
-            <div class="two columns u-pull-right">
-                <ul>
-                    <li class="submenu">
-                            <img src="img/cart.png" id="img-carrito">
+    <!-- Header / Carrito en barra superior -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <img src="img/logo.png" id="logo">
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito" style="cursor:pointer">
                             <div id="carrito">
-                                    
-                                    <table id="lista-carrito" class="u-full-width">
-                                        <thead>
-                                            <tr>
-                                                <th>Imagen</th>
-                                                <th>Nombre</th>
-                                                <th>Precio</th>
-                                                <th>Cantidad</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody></tbody>
-                                    </table>
-
-                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
                             </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div> 
-    </div>
+        </div>
     </header>
 
-
+    <!-- Hero -->
     <div id="hero">
         <div class="container">
             <div class="row">
-                    <div class="six columns">
-                        <div class="contenido-hero">
-                                <h2>Aprende algo nuevo</h2>
-                                <p>Todos los cursos a 1 leuro</p>
-                                <form action="#" id="busqueda" method="post" class="formulario">
-                                    <input class="u-full-width" type="text" placeholder="¿Que te gustaría Aprender?" id="buscador">
-                                    <input type="submit" id="submit-buscador" class="submit-buscador">
-                                </form>
-                        </div>
+                <div class="six columns">
+                    <div class="contenido-hero">
+                        <h2>Aprende algo nuevo</h2>
+                        <p>Todos los cursos a 1 leuro</p>
+                        <form action="#" id="busqueda" method="post" class="formulario">
+                            <input class="u-full-width" type="text" placeholder="¿Que te gustaría Aprender?" id="buscador">
+                            <input type="submit" id="submit-buscador" class="submit-buscador">
+                        </form>
                     </div>
-            </div> 
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- Barra de info -->
     <div class="barra">
         <div class="container">
             <div class="row">
-                    <div class="four columns icono icono1">
-                        <p>Cursos baratitos</p>
-                    </div>
-                    <div class="four columns icono icono2">
-                        <p>Buen@s profes</p>
-                    </div>
-                    <div class="four columns icono icono3">
-                        <p>Aprende nuevas tecnologías</p>
-                    </div>
+                <div class="four columns icono icono1">
+                    <p>Cursos baratitos</p>
+                </div>
+                <div class="four columns icono icono2">
+                    <p>Buen@s profes</p>
+                </div>
+                <div class="four columns icono icono3">
+                    <p>Aprende nuevas tecnologías</p>
+                </div>
             </div>
         </div>
-
     </div>
 
+    <!-- Lista de cursos OFERTAS -->
     <div id="lista-cursos" class="container">
         <h1 id="encabezado" class="encabezado">Ofertas Black Fraidei</h1>
         <div class="row">
@@ -89,36 +89,36 @@
                         <h4>JavaScript</h4>
                         <p>Manuel R.</p>
                         <img src="img/estrellas.png">
-                        <p class="precio">200€  <span class="u-pull-right ">1€</span></p>
+                        <p class="precio">200€ <span class="u-pull-right ">1€</span></p>
                         <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Añadir al carrito</a>
                     </div>
-                </div> <!--.card-->
+                </div>
             </div>
             <div class="four columns">
-                    <div class="card">
-                        <img src="img/curso2.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>HTML5, CSS3</h4>
-                            <p>Alejandro C.</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">200€  <span class="u-pull-right ">1€</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Añadir al carrito</a>
-                        </div>
+                <div class="card">
+                    <img src="img/curso2.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>HTML5, CSS3</h4>
+                        <p>Alejandro C.</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">200€ <span class="u-pull-right ">1€</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Añadir al carrito</a>
                     </div>
+                </div>
             </div>
             <div class="four columns">
-                    <div class="card">
-                        <img src="img/curso3.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>PHP</h4>
-                            <p>Javier O.</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">200€  <span class="u-pull-right ">1€</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Añadir al carrito</a>
-                        </div>
-                    </div> <!--.card-->
+                <div class="card">
+                    <img src="img/curso3.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>PHP</h4>
+                        <p>Javier O.</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">200€ <span class="u-pull-right ">1€</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Añadir al carrito</a>
+                    </div>
+                </div>
             </div>
-        </div> <!--.row-->
+        </div>
         <div class="row">
             <div class="four columns">
                 <div class="card">
@@ -127,10 +127,10 @@
                         <h4>Hacking Ético</h4>
                         <p>Manuel R.</p>
                         <img src="img/estrellas.png">
-                        <p class="precio">200€  <span class="u-pull-right ">1€</span></p>
+                        <p class="precio">200€ <span class="u-pull-right ">1€</span></p>
                         <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Añadir al carrito</a>
                     </div>
-                 </div> <!--.card-->
+                </div>
             </div>
             <div class="four columns">
                 <div class="card">
@@ -139,10 +139,10 @@
                         <h4>Incidentes de Ciberseguridad</h4>
                         <p>Eduardo F.</p>
                         <img src="img/estrellas.png">
-                        <p class="precio">200€  <span class="u-pull-right ">1€</span></p>
+                        <p class="precio">200€ <span class="u-pull-right ">1€</span></p>
                         <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Añadir al carrito</a>
                     </div>
-                </div> <!--.card-->
+                </div>
             </div>
             <div class="four columns">
                 <div class="card">
@@ -151,12 +151,12 @@
                         <h4>Bastionado de Sistemas y Redes</h4>
                         <p>David R.</p>
                         <img src="img/estrellas.png">
-                        <p class="precio">200€  <span class="u-pull-right ">1€</span></p>
+                        <p class="precio">200€ <span class="u-pull-right ">1€</span></p>
                         <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Añadir al carrito</a>
                     </div>
-                </div> <!--.card-->
+                </div>
             </div>
-        </div> <!--.row-->
+        </div>
         <div class="row">
             <div class="four columns">
                 <div class="card">
@@ -165,66 +165,73 @@
                         <h4>Análisis forense Informático</h4>
                         <p>Manuel R.</p>
                         <img src="img/estrellas.png">
-                        <p class="precio">200€  <span class="u-pull-right ">1€</span></p>
+                        <p class="precio">200€ <span class="u-pull-right ">1€</span></p>
                         <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Añadir al carrito</a>
                     </div>
-                </div> <!--.card-->
+                </div>
             </div>
-                <div class="four columns">
-                        <div class="card">
-                            <img src="img/curso6.jpg" class="imagen-curso u-full-width">
-                            <div class="info-card">
-                                <h4>Puesta en Producción Segura</h4>
-                                <p>Alejandro C.</p>
-                                <img src="img/estrellas.png">
-                                <p class="precio">200€  <span class="u-pull-right ">1€</span></p>
-                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Añadir al carrito</a>
-                            </div>
-                        </div> <!--.card-->
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/curso6.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Puesta en Producción Segura</h4>
+                        <p>Alejandro C.</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">200€ <span class="u-pull-right ">1€</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Añadir al carrito</a>
+                    </div>
                 </div>
-                <div class="four columns">
-                    <div class="card">
-                        <img src="img/curso4.jpg" class="imagen-curso u-full-width">
-                        <div class="info-card">
-                            <h4>Docker</h4>
-                            <p>Javier G.</p>
-                            <img src="img/estrellas.png">
-                            <p class="precio">200€  <span class="u-pull-right ">1€</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Añadir al carrito</a>
-                        </div>
-                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/curso4.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Docker</h4>
+                        <p>Javier G.</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">200€ <span class="u-pull-right ">1€</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Añadir al carrito</a>
+                    </div>
                 </div>
-        </div> <!--.row-->
-    </div>  
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrito flotante abajo derecha -->
+    <div id="carrito-flotante" class="carrito-flotante oculto">
+        <img src="img/cart.png" style="width:42px; cursor:pointer">
+        <span id="contador-carrito-flotante">0</span>
+    </div>
+
+    <!-- Modal del carrito flotante -->
+    <div id="modal-carrito" class="modal-carrito oculto">
+        <div class="modal-contenido">
+            <div id="carrito-copia"></div>
+            <button id="cerrar-modal">Cerrar</button>
+        </div>
+    </div>
 
     <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
-                    <div class="four columns">
-                            <nav id="principal" class="menu">
-                                <a class="enlace" href="https://iesrafaelalberti.es/">IES Rafael Alberti</a>
-                                <a class="enlace" href="#">C/ Amiel, s/n – 11012, Cádiz (Cádiz)</a>
-                                <a class="enlace" href="#">Tel: (+34) 956 24 33 17</a>
-                            </nav>
-                    </div>
-                    <div class="four columns">
-                            <nav id="secundaria" class="menu">
-                                <a class="enlace" href="https://fpcibersec.github.io/">C.E. Ciberseguridad TIC (Info)</a>
-                                <a class="enlace" href="https://fpcibersec.github.io/informacion/presentacion//">C.E. Ciberseguridad TIC (Presentación)</a>
-                            </nav>
-                    </div>
+                <div class="four columns">
+                    <nav id="principal" class="menu">
+                        <a class="enlace" href="https://iesrafaelalberti.es/">IES Rafael Alberti</a>
+                        <a class="enlace" href="#">C/ Amiel, s/n – 11012, Cádiz (Cádiz)</a>
+                        <a class="enlace" href="#">Tel: (+34) 956 24 33 17</a>
+                    </nav>
+                </div>
+                <div class="four columns">
+                    <nav id="secundaria" class="menu">
+                        <a class="enlace" href="https://fpcibersec.github.io/">C.E. Ciberseguridad TIC (Info)</a>
+                        <a class="enlace" href="https://fpcibersec.github.io/informacion/presentacion//">C.E. Ciberseguridad TIC (Presentación)</a>
+                    </nav>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- <script src="js/app1.js"></script> -->
-    <!-- <script src="js/app2.js"></script> -->
-    <!-- <script src="js/app3.js"></script> -->
-    <!-- <script src="js/app4.js"></script> -->
-    <!-- <script src="js/app5.js"></script> -->
-    <!-- <script src="js/app6.js"></script> -->
-    <!-- <script src="js/app7.js"></script> -->
+    <!-- JS FINAL: apunta a tu archivo comprimido y revisado -->
     <script src="js/app8.js"></script>
-
 </body>
 </html>

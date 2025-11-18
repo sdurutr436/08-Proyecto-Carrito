@@ -177,3 +177,104 @@ display: block;
 margin-bottom: 10px;
 text-decoration: none;
 }
+
+/* Contenedor de notificaciones */
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Notificación individual */
+.toast {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    min-width: 280px;
+    max-width: 350px;
+    transform: translateX(400px);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Animación de entrada */
+.toast.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Animación de salida */
+.toast.hide {
+    transform: translateX(400px);
+    opacity: 0;
+}
+
+/* Contenido de la notificación */
+.toast-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.toast-message {
+    font-size: 14px;
+    opacity: 0.95;
+}
+
+/* Carrito flotante */
+.carrito-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  background: #667eea;
+  color: #fff;
+  border-radius: 30px;
+  padding: 12px 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  z-index: 9999;
+  transition: box-shadow 0.2s;
+}
+
+.carrito-flotante span {
+  font-weight: bold;
+  background: #fff;
+  color: #667eea;
+  border-radius: 50%;
+  padding: 0 9px;
+  font-size: 16px;
+}
+.oculto {
+  display: none !important;
+}
+
+/* Modal de carrito */
+.modal-carrito {
+  position: fixed;
+  right: 0; bottom: 0;
+  left: 0; top: 0;
+  background: rgba(0,0,0,0.23);
+  z-index: 99999;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.modal-contenido {
+  background: #fff;
+  padding: 32px 22px 16px 22px;
+  border-radius: 18px 0 0 0;
+  min-width: 340px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+#cerrar-modal {
+  margin-top: 9px; background: #667eea; color: #fff; border: none; padding: 8px 18px; border-radius: 8px; cursor: pointer;
+}

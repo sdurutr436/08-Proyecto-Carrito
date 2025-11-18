@@ -278,3 +278,15 @@ text-decoration: none;
 #cerrar-modal {
   margin-top: 9px; background: #667eea; color: #fff; border: none; padding: 8px 18px; border-radius: 8px; cursor: pointer;
 }
+
+.card-dragging {
+    box-shadow: 0 4px 24px rgba(60,120,240,0.34);
+    border: 2px dashed #764ba2;
+    opacity: 0.85;
+}
+.carrito-flotante-drop {
+    box-shadow: 0 4px 32px #46d1f784, 0 0 0 4px #764ba2;
+    border: 2px dashed #764ba2;
+    transition: box-shadow 0.2s;
+}
+

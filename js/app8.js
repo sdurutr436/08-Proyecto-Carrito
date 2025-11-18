@@ -215,6 +215,43 @@ function checkCarritoVisible() {
     }
 }
 
+// --- Drag & Drop para cards y carrito flotante ---
+// Selecciona todas las cards
+document.querySelectorAll('.card').forEach(card => {
+    card.setAttribute('draggable', true);
+
+    card.addEventListener('dragstart', function(e) {
+        card.classList.add('card-dragging');
+        // Guarda el id para usar en drop
+        e.dataTransfer.setData('text/plain', card.getAttribute('data-id'));
+        // Opcional: efecto arrastre
+        e.dataTransfer.effectAllowed = 'move';
+    });
+
+    card.addEventListener('dragend', function(e) {
+        card.classList.remove('card-dragging');
+    });
+});
+
+// Efecto sobre el carrito flotante cuando arrastras
+carritoFlotante.addEventListener('dragover', function(e) {
+    e.preventDefault();
+    carritoFlotante.classList.add('carrito-flotante-drop');
+    e.dataTransfer.dropEffect = 'move';
+});
+carritoFlotante.addEventListener('dragleave', function(e) {
+    carritoFlotante.classList.remove('carrito-flotante-drop');
+});
+carritoFlotante.addEventListener('drop', function(e) {
+    e.preventDefault();
+    carritoFlotante.classList.remove('carrito-flotante-drop');
+    const id = e.dataTransfer.getData('text/plain');
+    // Busca la card y simula añadir
+    const card = document.querySelector('.card[data-id="' + id + '"]');
+    if (card) {
+        leerDatosCurso(card);
+    }
+});
 
 // Función para limpiar el HTML del carrito de barra
 function limpiarHTML() {
